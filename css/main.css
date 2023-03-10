@@ -28,7 +28,7 @@ a {
   background-color: #777;
   position: fixed;
   right: 10px;
-  bottom: 20px;
+  bottom: 60px;
   z-index: 1000;
   padding: 6px;
   border: none;
@@ -149,7 +149,6 @@ a {
   }
   .side .links {
     display: flex;
-    /* margin: 10px 10px; */
     padding: 10px;
   }
   .side .links a {
@@ -158,6 +157,10 @@ a {
 
   .side .cont i {
     margin-right: 30px;
+  }
+  .side .links .activ {
+    color: black;
+    background-color: white;
   }
 }
 /* start main */
