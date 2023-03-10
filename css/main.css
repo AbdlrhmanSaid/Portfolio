@@ -28,7 +28,7 @@ a {
   background-color: #777;
   position: fixed;
   right: 10px;
-  bottom: 10px;
+  bottom: 20px;
   z-index: 1000;
   padding: 6px;
   border: none;
@@ -46,6 +46,28 @@ a {
   height: 100vh;
   width: 20%;
   transition: 0.3s;
+}
+@media (max-width: 767px) {
+  .side {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    width: 100%;
+    transition: 0.3s;
+    position: fixed;
+    bottom: 0;
+    background-color: white;
+    display: flex;
+  }
+  .side h3 {
+    display: none;
+  }
+  .side p {
+    display: none;
+  }
+  .side .links {
+    display: flex;
+  }
 }
 .side img {
   width: 120px;
@@ -91,6 +113,7 @@ a {
   .side h3 {
     font-size: 10px;
   }
+
   .side .links span {
     display: none;
   }
@@ -99,12 +122,42 @@ a {
     border-radius: 6px;
   }
   .side .cont {
-    flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 6px;
   }
   .side .cont i {
     margin-bottom: 10px;
+  }
+  .side {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    width: 100%;
+    transition: 0.3s;
+    position: fixed;
+    bottom: 0;
+    background-color: white;
+    display: flex;
+    z-index: 999;
+  }
+  .side h3 {
+    display: none;
+  }
+  .side p {
+    display: none;
+  }
+  .side .links {
+    display: flex;
+    /* margin: 10px 10px; */
+    padding: 10px;
+  }
+  .side .links a {
+    padding: 13px;
+  }
+
+  .side .cont i {
+    margin-right: 30px;
   }
 }
 /* start main */
@@ -115,6 +168,7 @@ a {
 .main h2 {
   font-weight: 500;
   font-size: 40px;
+  margin: 10px;
 }
 .main .links {
   margin: 20px;
@@ -145,11 +199,15 @@ a {
   margin-right: 15px;
 }
 @media (max-width: 767px) {
+  .main {
+    width: 100%;
+  }
   .main .links {
     flex-direction: column;
   }
   .main h2 {
     text-align: center;
+    margin-top: 20px;
   }
 }
 .hr {
