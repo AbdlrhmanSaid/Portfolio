@@ -46,6 +46,10 @@ a {
   height: 100vh;
   width: 20%;
   transition: 0.3s;
+  position: fixed;
+  z-index: 1000;
+  background: white;
+  left: 0;
 }
 @media (max-width: 767px) {
   .side {
@@ -167,6 +171,8 @@ a {
 .main {
   background-color: #eee;
   width: 80%;
+  position: absolute;
+  right: 0;
 }
 .main h2 {
   font-weight: 500;
